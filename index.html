@@ -82,9 +82,9 @@
       </div>
     </div>
 
-    <div class="container" id="historia">
+    <div class="container-fluid" id="historia">
       <div class="row">
-        <div class="col-12 d-flex justify-content-center">
+        <div class="col-12 d-flex justify-content-center" id="container_do_carrossel">
           <div class="row"> 
             <div class="container px-4 w-1" id="partevermelha">
               <div class="col-md-12 mb-3">
@@ -96,18 +96,21 @@
               </div>
             </div>
           </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class=" mb-3" id="imagem">
-                <img src="./images/img-coletivo.png" alt="Imagem do coletivo Usina Eco-Cultural"/>
-              </div>
+          <div class="carrossel-container">
+            <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+            <div class="carrossel">
+              <img src="https://via.placeholder.com/800x400?text=Imagem+1" alt="Imagem 1">
+              <img src="https://via.placeholder.com/800x400?text=Imagem+2" alt="Imagem 2">
+              <img src="https://via.placeholder.com/800x400?text=Imagem+3" alt="Imagem 3">
+              <img src="https://via.placeholder.com/800x400?text=Imagem+4" alt="Imagem 4">
             </div>
+            <button class="next" onclick="mudarImagem(1)">&#10095;</button>
           </div>
         </div>
       </div>
     </div>
-
   </div>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>

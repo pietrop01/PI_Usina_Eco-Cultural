@@ -87,6 +87,15 @@ html,body{
   height: 100%;
 }
 
+#imagem {
+  padding-right: 0 !important;
+}
+
+#geral {
+  max-width: fit-content;
+  text-align: left;
+}
+
 #Titulo-Coletivo{
   color: #f9f9f9;
 
@@ -98,7 +107,7 @@ html,body{
 
 }
 
-.container{
+#geral{
   background-color: #9a181c;
  
 }
@@ -133,15 +142,56 @@ html,body{
 
 /* CSS DA TELA HISTÓRIA */
 
+#historia{
+  background-color: #D9D9D9;
+}
+
 #Titulo-Historia{
-  color: #f9f9f9;
+  color: black;
 }
 
 #texto-historia{
-  color: #f9f9f9;
+  color: black;
   text-align: justify;
 }
 
+.carrossel-container{
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrossel img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
 
 /* CSS DA TELA APOIE A USINA */
 
@@ -192,15 +242,6 @@ html,body{
 }
 
 /* CSS DA TELA LOJA */
-
-#geral {
-  max-width: fit-content;
-  text-align: left;
-}
-
-#imagem {
-  padding-right: 0 !important;
-}
 
 #eventos {
   box-sizing: border-box;
