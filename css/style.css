@@ -109,7 +109,6 @@ html,body{
 
 #geral{
   background-color: #9a181c;
- 
 }
 
 .custom-width-container{
@@ -157,9 +156,14 @@ html,body{
 
 .carrossel-container{
   position: relative;
-  width: 80%;
+  width: auto;
+  height: 500px;
   margin: 50px auto;
   overflow: hidden;
+}
+
+#container-historia{
+  width: 100%;
 }
 
 .carrossel {
