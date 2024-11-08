@@ -1,3 +1,15 @@
+html,body{
+  width: 100%;
+  height: 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
 /* CSS da nav bar*/
 .nav {
   font-family: "Roboto", sans-serif;
@@ -85,7 +97,7 @@ html,body{
 
 }
 
-.container{
+#partevermelha{
   background-color: #9a181c;
  
 }
@@ -300,17 +312,19 @@ html,body{
   padding-top: 4%;
 }
 
-#titulo {
+#titulo-apoie {
   margin-top: 6%;
   text-size-adjust: 10;
   color: #ececec;
   font-size: x-large;
+  margin-right: 35%;
 }
 
 #texto-apoie {
   margin-top: 11%;
   color: #ececec;
   font-size: large;
+  margin-right: 35%;
 }
 
 #botao-apoie {
@@ -320,16 +334,15 @@ html,body{
   height: 30px;
   border-radius: 5px;
   color: #ececec;
+  margin-right: 35%;
 }
 
 #imagem-apoie {
   position: absolute;
   right: 0px;
   width: 400px;
-  height: 621px;
+  height: 745px;
 }
-
-/* CSS DA TELA LOJA */
 
 #geral {
   max-width: fit-content;
@@ -432,6 +445,8 @@ html,body{
   margin-top: 5px;
 }
 
+/* CSS DA TELA LOJA */
+
 #body-loja {
   background-color: #ececec;
 }
@@ -455,4 +470,24 @@ html,body{
   padding: 4px;
   text-align: center;
   flex-direction: row;
+  border-radius: 20%;
+  font-size: large;
+}
+
+#camiseta-usina{
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+}
+
+#botom-usina{
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+}
+
+#caneca-usina{
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
 }
