@@ -193,7 +193,7 @@ ul img {
   padding-top: 4%;
 }
 
-#titulo {
+#titulo-apoie {
   margin-top: 6%;
   text-size-adjust: 10;
   color: #ececec;
@@ -221,8 +221,6 @@ ul img {
   width: 400px;
   height: 621px;
 }
-
-/* CSS DA TELA LOJA */
 
 #eventos {
   box-sizing: border-box;
@@ -316,6 +314,8 @@ ul img {
   margin-top: 5px;
 }
 
+/* CSS DA TELA LOJA */
+
 #body-loja {
   background-color: #ececec;
 }
@@ -335,10 +335,16 @@ ul img {
 
 #borda-loja {
   border: 2px solid black;
-  margin: 4px;
+  margin: 10px;
   padding: 4px;
   text-align: center;
   flex-direction: row;
+}
+
+#produto-usina{
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
 }
 
 /* CSS DA TELA FALE CONOSCO, LOGIN E CADESTRE-SE */
