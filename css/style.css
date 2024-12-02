@@ -11,25 +11,17 @@ html,body{
   list-style: none;
 }
 
-/* CSS DA NAV BAR*/
-.nav {
-  font-family: "Roboto", sans-serif;
-}
-
-.background-nav {
-  background-color: white;
-}
-
-.container-nav {
-  background-color: white;
-  max-height: min-content;
-  max-width: 1440px;
-  padding: 0;
-  margin: 0;
-}
+/* CSS DA NAV BAR */
 
 nav {
+  font-family: "Roboto Serif", serif; 
+  background-color: white;
   display: flex;
+  align-items: center; 
+}
+
+.logo {
+  margin-right: 20px; 
 }
 
 .logo img {
@@ -37,58 +29,47 @@ nav {
   max-height: 117px;
 }
 
-.logo button{
-  display: block;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.ul li img {
-  max-width: 50px;
-  max-height: 50px;
-}
-
-.carrinho{
-  margin-left: 446px;
-}
-
-.ul {
-  display: flex;
-  align-items: center;
-  text-align: left;
+.navbar {
+  flex: 1; 
   border-bottom: 2px solid #000;
-  padding-bottom: 25px;
 }
 
-.ul li {
-  margin: 0 20px;
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
   font-size: 25px;
-  color: white;
-  margin-top: 20px;
+  margin-top: 40px;
+  font-family: "Roboto Serif", serif; 
 }
 
-.ul li a {
+ul li a {
+  margin: 0 35px;
   color: black;
   text-decoration: none;
 }
 
-.ul li button{
-  display: block;
-  border: none;
-  background: none;
-  cursor: pointer;
+.imagens-da-nav {
+  position: fixed;
+  top: 40px;
+  right: 10px;
+  display: flex;
+  gap: 20px;
 }
 
-/*CSS DO COLETIVO*/
-
-html,body{
-  width: 100%;
-  height: 100%;
+ul img {
+  max-width: 50px;
+  max-height: 50px;
 }
+
+/* CSS DO COLETIVO */
 
 #imagem {
-  padding-right: 0 !important;
+  padding-right: 0;
 }
 
 #geral {
