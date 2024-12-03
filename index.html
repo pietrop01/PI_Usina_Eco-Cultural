@@ -65,15 +65,12 @@
       </div>
     </div>
 
-  <div class="container-fluid" id="historia">
-    <div class="row">
-      <div class="col-12 d-flex justify-content-center" id="container-historia">
-        <div class="row">
-          <div class="container px-4 w-1">
-            <div class="col-md-12 mb-3">
-              <h1 id="Titulo-Historia">A História do abandono à ocupação </h1>
-              <p id="texto-historia">
-                O Incinerador encerrou oficialmente em 2002, marcado por uma celebração com balões coloridos. Houve 461
+    <div class="container-fluid" id= "historia">
+      <div class="row">
+        <div class="col-12 col-lg-6 d-flex flex-column" id="conteudo-historia">
+          <h1 id="Titulo-historia">A História do abandono à ocupação</h1>
+          <p id="texto-historia">
+            O Incinerador encerrou oficialmente em 2002, marcado por uma celebração com balões coloridos. Houve 461
                 reclamações formais, 19 multas ambientais não pagas, e o local permanece considerado tóxico já que o
                 poder público não fez nada para “desintoxicar”. As tentativas de transformá-lo em um polo cultural e
                 ambiental foram frustradas, deixando o prédio interditado, com vidros quebrados e pichações. A chaminé
@@ -83,24 +80,42 @@
                 estação de metrô Santos-Imigrantes da Linha Verde do Metrô, o Coletivo Usina Eco-cultural decidiu ocupar
                 o espaço que ficou abandonado durante 20 anos, depois que um grupo de moradores conseguiu paralisar
                 imediatamente as atividades do Incinerador em 2001.
-              </p>
+          </p>
+        </div>
+        <div class="col-12 col-lg-6" >
+          <div class="carrossel-container" id="carrossel-historia">
+            <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+            <div class="carrossel">
+              <img src="images/imagemHistoria1.jpg" alt="Imagem 1">
+              <img src="images/imagemHistoria2.jpeg" alt="Imagem 2">
+              <img src="images/imagemHistoria3.jpg" alt="Imagem 3">
+              <img src="images/imagemHistoria4.jpeg" alt="Imagem 4">
             </div>
+            <button class="next" onclick="mudarImagem(1)">&#10095;</button>
           </div>
         </div>
-        <div class="carrossel-container">
-          <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
-          <div class="carrossel">
-            <img src="https://via.placeholder.com/800x400?text=Imagem+1" alt="Imagem 1">
-            <img src="https://via.placeholder.com/800x400?text=Imagem+2" alt="Imagem 2">
-            <img src="https://via.placeholder.com/800x400?text=Imagem+3" alt="Imagem 3">
-            <img src="https://via.placeholder.com/800x400?text=Imagem+4" alt="Imagem 4">
+        <div class="col-12 col-lg-6">
+          <div class="carrossel-container" id="carrossel-historia2">
+            <button class="prev" onclick="mudarImagem2(-1)">&#10094;</button>
+            <div class="carrossel2">
+              <img src="images/imagemHistoria5.jpeg" alt="Imagem 5">
+              <img src="images/imagemHistoria6.jpg" alt="Imagem 6">
+              <img src="images/imagemHistoria7.jpg" alt="Imagem 7">
+              <img src="images/imagemHistoria8.jpg" alt="Imagem 8">
+            </div>
+            <button class="next" onclick="mudarImagem2(1)">&#10095;</button>
           </div>
-          <button class="next" onclick="mudarImagem(1)">&#10095;</button>
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-column" id="conteudo-historia">
+          <h1 id="Titulo-historia">A História do incinerador</h1>
+          <p id="texto-historia">
+            O Incinerador Vergueiro, localizado no Ipiranga, zona sul de São Paulo, foi um dos três incineradores da cidade. Iniciou suas atividades em 1968, a princípio para lixo doméstico, posteriormente incluindo lixo hospitalar a partir de 1977. Ativo até 2002, o Incinerador Vergueiro desempenhou um papel significativo na história da coleta de lixo em São Paulo, chegando a incinerar cerca de 50 toneladas diárias.
+            O bairro do Ipiranga, predominantemente industrial, testemunhou o crescimento do descontentamento com o Incinerador, cujas fumaças atingiam um raio de 10km, afetando até cidades vizinhas. A população protestou intensamente na década de 90 e início dos anos 2000, destacando a inadequação ambiental do Incinerador. Em 2000, um protesto bloqueou a entrada de caminhões, levando o poder público a avaliar o incinerador.
+            O laudo de dezembro de 2000 revelou a presença de coliformes fecais, bacteriófagos e substâncias tóxicas nas cinzas, invalidando sua eficácia na esterilização do lixo. Detectou-se também a liberação de substâncias cancerígenas nas fumaças. Pressionada, a prefeitura assinou um Termo de Ajustamento de Conduta Ambiental, reduzindo a média diária de lixo para 6 toneladas. Em dezembro de 2001, ocorreu a última queima.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  </div>
 
   <script src="script.js"></script>
 </body>

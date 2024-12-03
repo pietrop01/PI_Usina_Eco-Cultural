@@ -93,27 +93,39 @@ ul img {
 
 #historia{
   background-color: #D9D9D9;
+  color: black;
 }
 
-#Titulo-Historia{
-  color: black;
+#Titulo-historia{
+  font-size: 36px;
+  font-weight: 400;
+  padding-top: 120px;
+  padding-left: 120px;
+  font-family: "Roboto Serif", serif;
 }
 
 #texto-historia{
-  color: black;
   text-align: justify;
+  font-size: 20px;
+  padding: 120px;
+  font-family: "Roboto Serif", serif;
 }
 
-.carrossel-container{
+#carrossel-historia{
   position: relative;
-  width: auto;
-  height: 500px;
-  margin: 50px auto;
   overflow: hidden;
+  margin-top: 140px;
+  width: 820px;
+  height: auto;
 }
 
-#container-historia{
-  width: 100%;
+#carrossel-historia2{
+  position: relative;
+  overflow: hidden;
+  margin-top: 140px;
+  width: 820px;
+  height: auto;
+  margin-left: 120px;
 }
 
 .carrossel {
@@ -121,7 +133,17 @@ ul img {
   transition: transform 0.5s ease;
 }
 
+.carrossel2 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
 .carrossel img {
+  width: 100%;
+  height: auto;
+}
+
+.carrossel2 img {
   width: 100%;
   height: auto;
 }
