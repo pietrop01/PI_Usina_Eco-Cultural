@@ -50,11 +50,11 @@ ul li a {
 }
 
 #imagens-da-nav {
-  position: fixed;
   top: 40px;
   right: 10px;
   display: flex;
   gap: 20px;
+  position: absolute;
 }
 
 ul img {
@@ -64,56 +64,26 @@ ul img {
 
 /* CSS DO COLETIVO */
 
-#imagem {
-  padding-right: 0;
-}
-
-#geral {
-  max-width: fit-content;
-  text-align: left;
-}
-
-#Titulo-Coletivo{
-  color: #f9f9f9;
-
-}
-
-#texto-coletivo{
-  color:#f9f9f9;
-  text-align: justify;
-
-}
-
-#geral{
+#coletivo {
   background-color: #9a181c;
+  color: #f9f9f9;
+  height: 100; 
+  width: 100;
 }
 
-.custom-width-container{
-  max-width: 80%;
+#Titulo-Coletivo {
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 40px;
+  padding-left: 40px;
+  font-family: "Roboto Serif", serif;
 }
 
-.col-md-5 content{
-  text-decoration-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.imagem{
-  width: 100%;
-  height: auto;
-  border-radius: 0px;
-  right: 0%;
-}
-
-#Titulo-Coletivo{
-  padding: 20px;
-  padding-top: 40px !important;
-  font-size: 30px;
-}
-
-#texto-coletivo{
-  padding: 20px;
-  font-size: 15px;
+#texto-coletivo {
+  text-align: justify;
+  font-size: 20px;
+  padding: 40px;
+  font-family: "Roboto Serif", serif;
 }
 
 /* CSS DA TELA HISTÓRIA */
