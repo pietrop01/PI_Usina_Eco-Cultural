@@ -67,8 +67,6 @@ ul img {
 #coletivo {
   background-color: #9a181c;
   color: #f9f9f9;
-  height: 100; 
-  width: 100;
 }
 
 #Titulo-Coletivo {
@@ -84,6 +82,11 @@ ul img {
   font-size: 20px;
   padding: 40px;
   font-family: "Roboto Serif", serif;
+}
+
+#imagem-coletivo img {
+  width: 100%;
+  height: 100%;
 }
 
 /* CSS DA TELA HISTÓRIA */
