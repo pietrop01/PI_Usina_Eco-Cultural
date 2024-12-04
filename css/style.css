@@ -302,51 +302,52 @@ ul img {
 
 /* CSS DA TELA NOTICIAS */
 
-#noticias{
-  background-color: #9A181C;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#noticias-section {
+  background-color: #3a90c3cc;
   color: white;
+  padding: 50px 20px;
+  min-height: 100vh; /* Faz o fundo ocupar a tela inteira */
 }
 
-#Titulo-noticias{
-  font-size: 36px;
-  font-weight: 400;
-  padding-top: 120px;
-  padding-left: 120px;
-  font-family: "Roboto Serif", serif;
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-#texto-noticias{
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
   text-align: justify;
-  font-size: 20px;
-  padding: 120px;
-  font-family: "Roboto Serif", serif;
 }
 
-#noticias{
-  position: relative;
-  overflow: hidden;
-  margin-top: 140px;
-  width: 820px;
-  height: auto;
+.btn-primary {
+  background-color: #9A181C;
+  border: none;
 }
 
-#noticias2{
-  position: relative;
-  overflow: hidden;
-  margin-top: 140px;
-  width: 820px;
-  height: auto;
-  margin-left: 120px;
+.btn-primary:hover {
+  background-color: #d31f26;
 }
 
-#noticias2 img {
-  width: 100%;
-  height: auto;
-}
-
-.carrossel4 img {
-  width: 100%;
-  height: auto;
+.text-white {
+  color: white !important;
 }
 
 
