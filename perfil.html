@@ -34,7 +34,7 @@
                   <a href="carrinho.html">
                     <img src="./images/carrinho.png" />
                   </a>
-                  <a href="login.html">
+                  <a href="perfil.html">
                     <img src="./images/usuario.png" />
                   </a>
                 </div>
@@ -45,49 +45,37 @@
       </header>
     </div>
 
-    <div id="login">
-      <h1 id="titulo">Login</h1>
-      <p style="text-align: center; margin-top: 20px">
-        <input type="text" name="email" id="email_input" placeholder="Email" />
-      </p>
-      <p style="text-align: center; margin-top: 10px">
-        <input type="text" name="senha" id="senha_input" placeholder="Senha" />
-      </p>
+    <div id="perfil">
+      <div id="bodyPerfil">
+        <h1 id="bemvindo">Bem vindo,</h1>
+        <p id="email">Email:</p>
 
-      <p style="text-align: center; margin-top: 20px">
-        <button
-          type="submit"
-          id="logarBotao"
-          class="btn"
-          value="entrar"
-          title="Logar"
-        >
-          Entrar
-        </button>
-      </p>
-
-      <div class="container-cadastro" style="margin-top: 10px">
-        <span id="nao_e_cadastrado">
-          Não é cadastrado? <br />
-          <a href="cadastro.html" id="cadastre_se_agora"
-            >Cadastre-se agora</a
-          ></span
-        >
+        <button id="logoutButton">Logout</button>
       </div>
     </div>
-    <script src="login.js"></script>
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const user = JSON.parse(localStorage.getItem("user"));
-        const userIcon = document.querySelector(
-          "#imagens-da-nav a[href='login.html']"
-        );
 
-        if (user) {
-          userIcon.href = "perfil.html";
-        } else {
-          userIcon.href = "login.html";
+        if (!user) {
+          window.location.href = "login.html";
+          return;
         }
+
+        document.getElementById(
+          "bemvindo"
+        ).textContent = `Bem vindo, ${user.nome}`;
+        document.getElementById("email").textContent = `Email: ${user.email}`;
+        document
+          .getElementById("logoutButton")
+          .addEventListener("click", () => {
+            const confirmLogout = confirm("Você tem certeza que deseja sair?");
+            if (confirmLogout) {
+              localStorage.removeItem("user");
+              window.location.href = "login.html";
+            }
+          });
       });
     </script>
   </body>

@@ -5,22 +5,20 @@ document.getElementById("logarBotao").addEventListener("click", async () => {
   try {
     const response = await fetch("http://localhost:3000/login", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, senha }),
     });
 
     const data = await response.json();
 
     if (response.status === 200) {
+      localStorage.setItem("user", JSON.stringify(data.user));
       alert(data.message);
-      window.location.href = "/index.html";
+      window.location.href = "perfil.html";
     } else {
       alert(data.message);
     }
   } catch (error) {
-    console.error("Erro:", error);
     alert("Erro ao tentar fazer login. Tente novamente.");
   }
 });

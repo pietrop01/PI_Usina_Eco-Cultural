@@ -104,6 +104,20 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const user = JSON.parse(localStorage.getItem("user"));
+      const userIcon = document.querySelector("#imagens-da-nav a[href='login.html']");
+  
+      // Atualiza o link com base no estado do usuário
+      if (user) {
+        userIcon.href = "perfil.html";
+      } else {
+        userIcon.href = "login.html";
+      }
+    });
+  </script>
+  
 </body>
 
 </html>

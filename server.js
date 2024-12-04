@@ -10,9 +10,7 @@ connectToDatabase();
 const app = express();
 const PORT = 3000;
 
-// Adiciona suporte ao CORS
 app.use(cors());
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -28,26 +26,17 @@ const User = mongoose.model("User", UserSchema);
 app.post("/login", async (req, res) => {
   const { email, senha } = req.body;
 
-  if (!email || !senha) {
-    return res.status(400).json({ message: "Email e senha são obrigatórios." });
-  }
-
   try {
     const user = await User.findOne({ email });
-
-    if (!user) {
-      return res.status(404).json({ message: "Usuário não encontrado." });
+    if (!user || !(await bcrypt.compare(senha, user.senha))) {
+      return res.status(401).json({ message: "Credenciais inválidas." });
     }
 
-    const senhaValida = await bcrypt.compare(senha, user.senha);
-
-    if (!senhaValida) {
-      return res.status(401).json({ message: "Senha incorreta." });
-    }
-
-    res.status(200).json({ message: "Login bem-sucedido!" });
+    res.status(200).json({
+      message: "Login bem-sucedido!",
+      user: { nome: user.nome, email: user.email },
+    });
   } catch (error) {
-    console.error(error);
     res.status(500).json({ message: "Erro interno do servidor." });
   }
 });
