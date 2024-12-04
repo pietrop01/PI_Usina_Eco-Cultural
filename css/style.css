@@ -209,17 +209,12 @@ ul img {
 /* CSS DA TELA LOJA */
 
 #eventos {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.6),
+      #3A90C3,
       rgba(255, 255, 255, 0.6)
     ),
     url("../images/logoFundo.png");
@@ -229,92 +224,50 @@ ul img {
 }
 
 .container-evento {
-  font-family: "Roboto", sans-serif;
   text-align: center;
-  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1000px;
 }
 
 #titulo-evento {
-  font-family: "Roboto", sans-serif;
-  margin-top: -200px;
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.evento-grid {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card-evento {
-  font-family: "Roboto", sans-serif;
-  margin-top: 100px;
-  background-color: #3a90c3cc;
-  border-radius: 8px;
-  padding: 20px;
-  width: 300px;
-  height: 500px;
-  position: relative;
-}
-
-.data-evento {
-  font-family: "Roboto", sans-serif;
-  background-color: white;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1em;
-  position: absolute;
-}
-
-#img-evento {
-  width: 100%;
-  border-radius: 8px;
-  margin-top: 40px;
-}
-
-#titulo-h2-evento {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-
-.descricao-evento {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.informacoes-adicionais {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9em;
+  font-size: 2.5em;
   color: #333;
-  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#subtitulo-evento {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+iframe {
+  border-radius: 8px;
 }
 
 /* CSS DA TELA NOTICIAS */
 
-/* Fundo da seção de notícias */
 #noticias-section {
   background-color: #9A181C;
   color: white;
 }
 
-/* Título principal */
 #noticias-section h1 {
   font-size: 3rem;
   font-family: "Roboto Serif", serif;
 }
 
-/* Estilização dos cards */
 .card {
   border: none;
   border-radius: 10px;
@@ -339,7 +292,6 @@ ul img {
   flex-direction: column;
 }
 
-/* Títulos dos cards */
 .card-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -348,7 +300,6 @@ ul img {
   color: #9A181C;
 }
 
-/* Texto dos cards */
 .card-text {
   font-size: 1rem;
   text-align: justify;
@@ -356,7 +307,6 @@ ul img {
   font-family: "Roboto Serif", serif;
 }
 
-/* Botões */
 .btn-primary {
   background-color: #9A181C;
   border: none;
@@ -366,7 +316,6 @@ ul img {
   background-color: #d31f26;
 }
 
-/* Responsividade adicional */
 @media (max-width: 768px) {
   #noticias-section h1 {
     font-size: 2.5rem;
