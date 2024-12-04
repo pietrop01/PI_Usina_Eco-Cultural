@@ -109,7 +109,6 @@
       const user = JSON.parse(localStorage.getItem("user"));
       const userIcon = document.querySelector("#imagens-da-nav a[href='login.html']");
   
-      // Atualiza o link com base no estado do usuário
       if (user) {
         userIcon.href = "perfil.html";
       } else {

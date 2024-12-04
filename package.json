@@ -16,6 +16,7 @@
     "dp-pi": "file:",
     "express": "^4.21.1",
     "mongodb": "^6.11.0",
-    "mongoose": "^8.8.3"
+    "mongoose": "^8.8.3",
+    "nodemailer": "^6.9.16"
   }
 }
