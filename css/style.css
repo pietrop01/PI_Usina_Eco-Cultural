@@ -302,23 +302,30 @@ ul img {
 
 /* CSS DA TELA NOTICIAS */
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Fundo da seção de notícias */
 #noticias-section {
-  background-color: #3a90c3cc;
+  background-color: #9A181C;
   color: white;
-  padding: 50px 20px;
-  min-height: 100vh; /* Faz o fundo ocupar a tela inteira */
 }
 
+/* Título principal */
+#noticias-section h1 {
+  font-size: 3rem;
+  font-family: "Roboto Serif", serif;
+}
+
+/* Estilização dos cards */
 .card {
   border: none;
   border-radius: 10px;
   overflow: hidden;
+  background-color: #ffffff;
+  color: #333333;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
 .card-img-top {
@@ -326,17 +333,30 @@ body {
   object-fit: cover;
 }
 
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Títulos dos cards */
 .card-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-family: "Roboto Serif", serif;
+  color: #9A181C;
 }
 
+/* Texto dos cards */
 .card-text {
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: justify;
+  flex-grow: 1;
+  font-family: "Roboto Serif", serif;
 }
 
+/* Botões */
 .btn-primary {
   background-color: #9A181C;
   border: none;
@@ -346,9 +366,21 @@ body {
   background-color: #d31f26;
 }
 
-.text-white {
-  color: white !important;
+/* Responsividade adicional */
+@media (max-width: 768px) {
+  #noticias-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+  }
 }
+
 
 
 /* CSS DA TELA LOJA */
