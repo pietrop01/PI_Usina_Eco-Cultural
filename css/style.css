@@ -171,33 +171,21 @@ ul img {
 
 /* CSS DA TELA APOIE A USINA */
 
-#background-tela-apoie {
-  background-color: #9a181c;
-}
-
-#body-apoie {
-  background-color: #9a181c;
-}
-
-#header-apoie {
-  background-color: white;
-}
-
 #container-apoie {
+  background-color: #9a181c;
   text-align: center;
-  padding-top: 4%;
+  color: white;
+  display: flex;
 }
 
-#titulo {
+#titulo-apoie {
   margin-top: 6%;
   text-size-adjust: 10;
-  color: #ececec;
   font-size: x-large;
 }
 
-#texto-apoie {
+.texto-apoie {
   margin-top: 11%;
-  color: #ececec;
   font-size: large;
 }
 
@@ -211,10 +199,11 @@ ul img {
 }
 
 #imagem-apoie {
-  position: absolute;
   right: 0px;
-  width: 400px;
-  height: 621px;
+}
+
+#imagem-apoie img {
+  height: 630
 }
 
 /* CSS DA TELA LOJA */
