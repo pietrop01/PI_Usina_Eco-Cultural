@@ -31,4 +31,3 @@ function mudarImagem2(direcao) {
   const carrossel = document.querySelector('.carrossel2');
   carrossel.style.transform = `translateX(-${indiceAtual * 100}%)`;
 }
-

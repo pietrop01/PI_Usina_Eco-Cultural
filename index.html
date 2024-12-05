@@ -57,8 +57,8 @@
         </div>
       </div>
     </div>
-  </nav>  
-
+  </nav>
+  
     <div class="container-fluid" id="coletivo">
       <div class="row">
         <div class="col-12 col-lg-4 d-flex flex-column" id="conteudo-coletivo">
@@ -272,6 +272,16 @@
       
 
   <script src="script.js"></script>
+  <script>
+    // Seleciona o botão e o menu
+    const menuToggle = document.getElementById('menuToggle');
+    const navbarMenu = document.getElementById('navbarMenu');
+  
+    // Adiciona um evento de clique
+    menuToggle.addEventListener('click', () => {
+      navbarMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>

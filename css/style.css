@@ -12,7 +12,6 @@ html,body{
 }
 
 /* CSS DA NAV BAR */
-
 nav {
   font-family: "Roboto Serif", serif;
   background-color: white;
@@ -54,14 +53,14 @@ ul {
   max-height: 40px;
 }
 
-/* Botão responsivo (hambúrguer) */
+/* Botão hambúrguer */
 .navbar-toggler {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .navbar-toggler-icon {
-  display: block;
   width: 30px;
   height: 3px;
   background-color: black;
@@ -87,26 +86,30 @@ ul {
   top: 8px;
 }
 
-/* Responsividade para telas menores */
+/* Responsividade */
 @media (max-width: 767px) {
   #navbarMenu {
+    display: none;
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
     background-color: white;
+    padding: 20px;
     width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+  }
+
+  #navbarMenu.active {
+    display: flex;
   }
 
   ul {
     flex-direction: column;
     gap: 10px;
   }
-
-  #imagens-da-nav {
-    margin-top: 15px;
-  }
 }
-
 
 /* CSS DO COLETIVO */
 
