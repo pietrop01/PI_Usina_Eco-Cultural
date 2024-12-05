@@ -126,10 +126,12 @@
   padding: 10px;
 }
 
-.btn {
+.btn,
+#cadastroBotao,
+#logarBotao {
   margin-top: 15px;
   height: 35px;
-  width: 85px;
+  width: 90px;
   padding: 5px;
   font-family: "Roboto", sans-serif;
   background-color: #69a625;

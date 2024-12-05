@@ -1,0 +1,54 @@
+#perfil {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    linear-gradient(rgba(0, 128, 0, 0.3), rgba(0, 128, 0, 0.3)),
+    url("/images/outras pags/fundo.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bodyPerfil {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(105, 166, 37, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#bemvindo {
+  color: #ececec;
+  font-size: 60px;
+  font-family: "Roboto Serif", serif;
+}
+
+#email {
+  color: #ececec;
+  font-size: 30px;
+  font-family: "Roboto Serif", serif;
+}
+
+#logoutButton {
+  margin-top: 3%;
+  background-color: #9a181c;
+  width: 30%;
+  height: 30px;
+  border-radius: 5px;
+  color: #ececec;
+  border: none;
+  font-family: "Roboto Serif", serif;
+  transition: 0.2s;
+}
+
+#logoutButton:hover {
+  background-color: #7e1417;
+  transition: 0.2s;
+}

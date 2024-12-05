@@ -272,6 +272,24 @@
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
   <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    const userIcon = document.querySelector("a[href='/paginas/login.html']");
+
+    if (userIcon) {
+        if (user) {
+            userIcon.href = "/paginas/perfil.html";  
+        } else {
+            userIcon.href = "/paginas/login.html";  
+        }
+    } else {
+        console.error("O elemento do ícone de usuário não foi encontrado.");
+    }
+});
+
+  </script>
 
 </body>
 </html>

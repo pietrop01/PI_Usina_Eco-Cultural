@@ -1,111 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/navbar/style.css" />
+    <link
+      rel="stylesheet"
+      href="/css/fale conosco login cadastre-se/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Fale Conosco</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/navbar/style.css" />
-  <link rel="stylesheet" href="/css/fale conosco login cadastre-se/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <title>Fale Conosco</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg py-1 py-lg-0 shadow-sm">
-    <div class="container-fluid">
-      <div id="logo">
-        <a href="/index.html">
-          <img src="/images/navbar/logo.png" alt="Logo da Usina Eco-Cultural" class="logo">
-        </a>
-      </div>
-      <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#side-menu"
-        aria-controls="side-menu">
-        <i class="bi bi-list fs-2"></i>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="side-menu" aria-labelledby="side-menu-label">
-        <div class="offcanvas-header">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <body>
+    <nav class="navbar navbar-expand-lg py-1 py-lg-0 shadow-sm">
+      <div class="container-fluid">
+        <div id="logo">
+          <a href="/index.html">
+            <img
+              src="/images/navbar/logo.png"
+              alt="Logo da Usina Eco-Cultural"
+              class="logo"
+            />
+          </a>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-              <a href="/index.html" class="nav-link">O Coletivo</a>
-            </li>
-            <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-              <a href="/index.html" class="nav-link">História</a>
-            </li>
-            <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-              <a href="/index.html" class="nav-link">Apoie</a>
-            </li>
-            <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-              <a href="/index.html" class="nav-link">Eventos</a>
-            </li>
-            <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
-              <a href="/index.html" class="nav-link">Notícias</a>
-            </li>
-          </ul>
-          <div class="d-flex gap-4 mt-4">
-            <a href="/paginas/loja.html">
-              <img src="/images/navbar/carrinho.png" alt="Carrinho" class="menu-icon">
-            </a>
-            <a href="/paginas/login.html">
-              <img src="/images/navbar/usuario.png" alt="Usuário" class="menu-icon">
-            </a>
+        <button
+          class="navbar-toggler ms-auto border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#side-menu"
+          aria-controls="side-menu"
+        >
+          <i class="bi bi-list fs-2"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="side-menu"
+          aria-labelledby="side-menu-label"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                <a href="/index.html" class="nav-link">O Coletivo</a>
+              </li>
+              <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                <a href="/index.html" class="nav-link">História</a>
+              </li>
+              <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                <a href="/index.html" class="nav-link">Apoie</a>
+              </li>
+              <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                <a href="/index.html" class="nav-link">Eventos</a>
+              </li>
+              <li class="nav-item px-2 px-lg-4 py-1 py-lg-4">
+                <a href="/index.html" class="nav-link">Notícias</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-4 mt-4">
+              <a href="/paginas/loja.html">
+                <img
+                  src="/images/navbar/carrinho.png"
+                  alt="Carrinho"
+                  class="menu-icon"
+                />
+              </a>
+              <a href="/paginas/login.html">
+                <img
+                  src="/images/navbar/usuario.png"
+                  alt="Usuário"
+                  class="menu-icon"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div id="fale-conosco">
-    <h1 id="titulo">Fale Conosco</h1>
-    <p style="text-align: center">
-      <input type="text" name="nome" id="nome_input" placeholder="Nome" />
-    </p>
-    <p style="text-align: center">
-      <input type="text" name="email" id="email_input" placeholder="Email" />
-    </p>
-    <p style="text-align: center">
-      <input
-        type="text"
-        name="mensagem"
-        id="mensagem_input"
-        placeholder="Mensagem"
-      />
-    </p>
-    <p style="text-align: center">
-      <button
-        type="submit"
-        id="enviarMsgBotao"
-        class="btn"
-        value="enviar"
-        title="Enviar Mensagem"
-      >
-        Enviar
-      </button>
-    </p>
-    <div class="container-telefone">
-      <span id="telefone">
-        Ou ligue no número, <br />
-        (11) 98585-3114</span>
+    <div id="fale-conosco">
+      <h1 id="titulo">Fale Conosco</h1>
+      <p style="text-align: center">
+        <input type="text" name="nome" id="nome_input" placeholder="Nome" />
+      </p>
+      <p style="text-align: center">
+        <input type="text" name="email" id="email_input" placeholder="Email" />
+      </p>
+      <p style="text-align: center">
+        <input
+          type="text"
+          name="mensagem"
+          id="mensagem_input"
+          placeholder="Mensagem"
+        />
+      </p>
+      <p style="text-align: center">
+        <button
+          type="submit"
+          id="enviarMsgBotao"
+          class="btn"
+          value="enviar"
+          title="Enviar Mensagem"
+        >
+          Enviar
+        </button>
+      </p>
+      <div class="container-telefone">
+        <span id="telefone">
+          Ou ligue no número, <br />
+          (11) 98585-3114</span
+        >
+      </div>
     </div>
-  </div>
 
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-</body>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script>
+      document
+        .getElementById("faleConoscoForm")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          const nome = document.getElementById("nome_input").value;
+          const email = document.getElementById("email_input").value;
+          const mensagem = document.getElementById("mensagem_input").value;
+
+          if (!nome || !email || !mensagem) {
+            alert("Por favor, preencha todos os campos.");
+            return;
+          }
+
+          const emailBody = `Nome: ${nome}%0AEmail: ${email}%0AMensagem:%0A${mensagem}`;
+          const destinatario = "suporteUsina@gmail.com";
+          const assunto = `Mensagem de suporte de ${nome}`;
+
+          const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${destinatario}&su=${encodeURIComponent(
+            assunto
+          )}&body=${emailBody}`;
+
+          window.open(gmailUrl, "_blank");
+        });
+    </script>
+  </body>
 </html>
