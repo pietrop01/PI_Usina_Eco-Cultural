@@ -438,6 +438,12 @@ iframe {
   margin-top: 20px;
 }
 
+#icons_rodape img{
+  max-width: 35px;
+  max-height: auto;
+}
+
+
 /* CSS DA TELA LOJA */
 
 #body-loja {
