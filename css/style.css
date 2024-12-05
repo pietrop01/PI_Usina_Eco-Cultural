@@ -120,9 +120,36 @@ ul {
   font-family: "Roboto Serif", serif;
 }
 
+
 #imagem-coletivo img {
   width: 100%;
-  height: 100%;
+  height: auto; 
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  #Titulo-Coletivo {
+    font-size: 32px; 
+    padding-left: 20px;
+  }
+
+  #texto-coletivo {
+    font-size: 18px; 
+    padding: 20px; 
+  }
+}
+
+@media (max-width: 576px) {
+  #Titulo-Coletivo {
+    font-size: 28px; 
+    padding-left: 10px;
+  }
+
+  #texto-coletivo {
+    font-size: 16px; 
+    padding: 10px;
+  }
 }
 
 /* CSS DA TELA HISTÓRIA */
@@ -446,29 +473,13 @@ iframe {
 
 /* CSS DA TELA LOJA */
 
-#body-loja {
-  background-color: #ececec;
+.product-card {
+  margin: 10px;
 }
 
-#background-tela-loja {
-  background-color: #ececec;
-}
-
-#header-loja {
-  background-color: white;
-}
-
-.container#container-loja {
-  display: flex;
-  padding: 10%;
-}
-
-#borda-loja {
-  border: 2px solid black;
-  margin: 4px;
-  padding: 4px;
-  text-align: center;
-  flex-direction: row;
+.product-card img {
+  height: 200px;
+  object-fit: cover;
 }
 
 /* CSS DA TELA FALE CONOSCO, LOGIN E CADESTRE-SE */
