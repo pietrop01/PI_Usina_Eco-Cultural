@@ -1,0 +1,54 @@
+#rodape {
+    background-color: #ECECEC;
+    color: #333333;
+    font-family: "Roboto Serif", serif;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: auto;
+  }
+  
+  
+  #texto-rodape {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .btn-footer {
+    background-color: #9A181C;
+    color: white;
+    font-size: 4rem; 
+    width: 120px; 
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-footer:hover {
+    background-color: #d31f26;
+    transform: scale(1.1);
+  }
+  
+  .footer-divider {
+    border: 0;
+    height: 1px;
+    background: #9A181C;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  .logo-rodape img {
+    max-width: 150px;
+    margin-top: 20px;
+  }
+  
+  #icons_rodape img{
+    max-width: 35px;
+    max-height: auto;
+  }
+  

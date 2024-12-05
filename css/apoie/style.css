@@ -1,0 +1,34 @@
+#container-apoie {
+    background-color: #9a181c;
+    text-align: center;
+    color: white;
+    display: flex;
+  }
+  
+  #titulo-apoie {
+    margin-top: 6%;
+    text-size-adjust: 10;
+    font-size: x-large;
+  }
+  
+  .texto-apoie {
+    margin-top: 11%;
+    font-size: large;
+  }
+  
+  #botao-apoie {
+    margin-top: 3%;
+    background-color: #69a625;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    color: #ececec;
+  }
+  
+  #imagem-apoie {
+    right: 0px;
+  }
+  
+  #imagem-apoie img {
+    height: 630
+  }
