@@ -17,31 +17,29 @@
       <header>
         <div class="container">
           <nav>
-            <div class="logo">
-              <button>
-                <img src=".\images\logo.png" alt="" href="#" />
-              </button>
+            <div class="col-1" id="logo">
+              <a href="index.html">
+                <img src="./images/logo.png" />
+              </a>
             </div>
-            <ul class="ul">
-              <li><a href="coletivo.html"> O Coletivo</a></li>
-              <li><a href="historia.html"> História</a></li>
-              <li><a href="apoie.html"> Apoie</a></li>
-              <li><a href="loja.html"> Loja</a></li>
-              <li><a href="eventos.html"> Eventos</a></li>
-              <li><a href="noticias.html"> Noticias</a></li>
-              <li>
-                <button>
-                  <img src=".\images\carrinho.png" alt="" />
-                </button>
-              </li>
-              <li>
-                <a href="login.html">
-                  <button>
-                    <img src=".\images\usuario.png" alt="" />
-                  </button>
-                </a>
-              </li>
-            </ul>
+            <div class="container-fluid" id="navbar">
+              <ul>
+                <li><a href="coletivo.html"> O Coletivo</a></li>
+                <li><a href="historia.html"> História</a></li>
+                <li><a href="apoie.html"> Apoie</a></li>
+                <li><a href="loja.html"> Loja</a></li>
+                <li><a href="eventos.html"> Eventos</a></li>
+                <li><a href="noticias.html"> Notícias</a></li>
+                <div class="col-1" id="imagens-da-nav">
+                  <a href="carrinho.html">
+                    <img src="./images/carrinho.png" />
+                  </a>
+                  <a href="login.html">
+                    <img src="./images/usuario.png" />
+                  </a>
+                </div>
+              </ul>
+            </div>
           </nav>
         </div>
       </header>
@@ -77,5 +75,20 @@
         >
       </div>
     </div>
+    <script src="login.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const user = JSON.parse(localStorage.getItem("user"));
+        const userIcon = document.querySelector(
+          "#imagens-da-nav a[href='login.html']"
+        );
+
+        if (user) {
+          userIcon.href = "perfil.html";
+        } else {
+          userIcon.href = "login.html";
+        }
+      });
+    </script>
   </body>
 </html>

@@ -13,75 +13,71 @@
     <title>Fale conosco</title>
   </head>
   <body>
-    <div class="background-nav">
-      <header>
-        <div class="container">
-          <nav>
-            <div class="logo">
-              <button>
-                <img src=".\images\logo.png" alt="" href="#" />
-              </button>
-            </div>
-            <ul class="ul">
-              <li><a href="coletivo.html"> O Coletivo</a></li>
-              <li><a href="historia.html"> História</a></li>
-              <li><a href="apoie.html"> Apoie</a></li>
-              <li><a href="loja.html"> Loja</a></li>
-              <li><a href="eventos.html"> Eventos</a></li>
-              <li><a href="noticias.html"> Noticias</a></li>
-              <li>
-                <button>
-                  <img src=".\images\carrinho.png" alt="" />
-                </button>
-              </li>
-              <li>
-                <a href="login.html">
-                  <button>
-                    <img src=".\images\usuario.png" alt="" />
-                  </button>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </div>
-
     <div id="fale-conosco">
       <h1 id="titulo">Fale Conosco</h1>
-      <p style="text-align: center">
-        <input type="text" name="nome" id="nome_input" placeholder="Nome" />
-      </p>
-      <p style="text-align: center">
-        <input type="text" name="email" id="email_input" placeholder="Email" />
-      </p>
-      <p style="text-align: center">
-        <input
-          type="text"
-          name="mensagem"
-          id="mensagem_input"
-          placeholder="Mensagem"
-        />
-      </p>
-
-      <p style="text-align: center">
-        <button
-          type="submit"
-          id="enviarMsgBotao"
-          class="btn"
-          value="enviar"
-          title="Enviar Mensagem"
-        >
-          Enviar
-        </button>
-      </p>
-
+      <form id="faleConoscoForm">
+        <p style="text-align: center">
+          <input
+            type="text"
+            name="nome"
+            id="nome_input"
+            placeholder="Nome"
+            required
+          />
+        </p>
+        <p style="text-align: center">
+          <input
+            type="email"
+            name="email"
+            id="email_input"
+            placeholder="Email"
+            required
+          />
+        </p>
+        <p style="text-align: center">
+          <input
+            name="mensagem"
+            id="mensagem_input"
+            placeholder="Mensagem"
+            required
+          />
+        </p>
+        <p style="text-align: center">
+          <button type="submit" id="enviarMsgBotao" class="btn">Enviar</button>
+        </p>
+      </form>
       <div class="container-telefone">
         <span id="telefone">
           Ou ligue no número, <br />
-          (11) 98585-3114</span
-        >
+          (11) 98585-3114
+        </span>
       </div>
     </div>
+    <script>
+      document
+        .getElementById("faleConoscoForm")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          const nome = document.getElementById("nome_input").value;
+          const email = document.getElementById("email_input").value;
+          const mensagem = document.getElementById("mensagem_input").value;
+
+          if (!nome || !email || !mensagem) {
+            alert("Por favor, preencha todos os campos.");
+            return;
+          }
+
+          const emailBody = `Nome: ${nome}%0AEmail: ${email}%0AMensagem:%0A${mensagem}`;
+          const destinatario = "suporteUsina@gmail.com";
+          const assunto = `Mensagem de suporte de ${nome}`;
+
+          const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${destinatario}&su=${encodeURIComponent(
+            assunto
+          )}&body=${emailBody}`;
+
+          window.open(gmailUrl, "_blank");
+        });
+    </script>
   </body>
 </html>
