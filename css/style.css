@@ -257,7 +257,7 @@ nav {
       #3A90C3,
       rgba(255, 255, 255, 0.6)
     ),
-    url("../images/logoFundo.png");
+    url("../images/eventos/logoFundo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -446,7 +446,7 @@ iframe {
       rgba(255, 255, 255, 0.2)
     ),
     linear-gradient(rgba(0, 128, 0, 0.3), rgba(0, 128, 0, 0.3)),
-    url("../images/fundo.png");
+    url("../images/outras pags/fundo.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
