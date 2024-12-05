@@ -128,7 +128,8 @@
 
 .btn,
 #cadastroBotao,
-#logarBotao {
+#logarBotao,
+#enviarMsgBotao {
   margin-top: 15px;
   height: 35px;
   width: 90px;

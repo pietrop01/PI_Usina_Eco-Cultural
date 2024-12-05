@@ -131,14 +131,7 @@
           Enviar
         </button>
       </p>
-      <div class="container-telefone">
-        <span id="telefone">
-          Ou ligue no número, <br />
-          (11) 98585-3114</span
-        >
-      </div>
     </div>
-
     <div vw class="enabled">
       <div vw-access-button class="active"></div>
       <div vw-plugin-wrapper>
@@ -151,8 +144,8 @@
     </script>
     <script>
       document
-        .getElementById("faleConoscoForm")
-        .addEventListener("submit", (e) => {
+        .getElementById("enviarMsgBotao")
+        .addEventListener("click", (e) => {
           e.preventDefault();
 
           const nome = document.getElementById("nome_input").value;

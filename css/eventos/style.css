@@ -1,47 +1,44 @@
 #eventos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(
-        #3A90C3,
-        rgba(255, 255, 255, 0.6)
-      ),
-      url("/images/eventos/logoFundo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .container-evento {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    max-width: 1000px;
-  }
-  
-  #titulo-evento {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  #subtitulo-evento {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 30px;
-  }
-  
-  .calendar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  iframe {
-    border-radius: 8px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(#3a90c3, rgba(255, 255, 255, 0.6)),
+    url("/images/eventos/logoFundo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-evento {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  /* padding: 30px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1000px;
+}
+
+#titulo-evento {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#subtitulo-evento {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+iframe {
+  border-radius: 8px;
+}
