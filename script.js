@@ -32,11 +32,3 @@ function mudarImagem2(direcao) {
   carrossel.style.transform = `translateX(-${indiceAtual * 100}%)`;
 }
 
-// Seleciona o botão e o menu
-const menuToggle = document.getElementById('menuToggle');
-const navbarMenu = document.getElementById('navbarMenu');
-
-// Adiciona um evento de clique
-menuToggle.addEventListener('click', () => {
-  navbarMenu.classList.toggle('active');
-});

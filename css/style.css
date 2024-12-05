@@ -1,102 +1,58 @@
-/* CSS DA NAV BAR */
+/* Estilo da navbar */
 nav {
-  font-family: "Roboto Serif", serif;
   background-color: white;
   border-bottom: 2px solid #000;
   padding: 10px 20px;
 }
 
-/* Estilo do logo */
+/* Logo */
 #logo img {
   max-width: 100px;
   max-height: 100px;
 }
 
-/* Menu (desktop e telas maiores) */
-ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-item {
-  margin: 0 15px;
-}
-
-.nav-link {
-  font-size: 20px;
-  color: black;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  text-decoration: underline;
-}
-
-/* Ícones do menu */
-#imagens-da-nav img {
+/* Ícones do carrinho e usuário */
+.menu-icon {
   max-width: 40px;
   max-height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon:hover {
+  transform: scale(1.2);
 }
 
 /* Botão hambúrguer */
 .navbar-toggler {
-  background: none;
   border: none;
-  cursor: pointer;
 }
 
-.navbar-toggler-icon {
-  width: 30px;
-  height: 3px;
-  background-color: black;
-  position: relative;
+.navbar-toggler i {
+  font-size: 1.8rem; /* Tamanho do ícone */
 }
 
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-  content: '';
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: black;
-  position: absolute;
-  left: 0;
-}
-
-.navbar-toggler-icon::before {
-  top: -8px;
-}
-
-.navbar-toggler-icon::after {
-  top: 8px;
+/* Alinhamento horizontal dos ícones na barra lateral */
+.offcanvas-body .d-flex {
+  flex-direction: row; /* Coloca os ícones lado a lado */
+  justify-content: left; /* Centraliza os ícones horizontalmente */
+  gap: 20px; /* Espaçamento entre os ícones */
 }
 
 /* Responsividade */
-@media (max-width: 767px) {
-  #navbarMenu {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white;
-    padding: 20px;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    z-index: 10;
+@media (max-width: 991px) {
+  #logo img {
+    max-width: 80px;
   }
 
-  #navbarMenu.active {
-    display: flex;
+  .navbar-toggler i {
+    font-size: 1.5rem;
   }
 
-  ul {
-    flex-direction: column;
-    gap: 10px;
+  .menu-icon {
+    max-width: 30px;
   }
 }
+
 
 /* CSS DO COLETIVO */
 
